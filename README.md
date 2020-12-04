@@ -1,6 +1,8 @@
 # 说明
 1.先 git clone https://github.com/misnet/kuga-server.git
+
 2.nginx.demo.conf 是对应的nginx配置文件，放到你的nginx的配置目录，记得修改$root_path和  server_name 改成你自己的，如果是你本地访问，可以用demo.api.kuga.wang这个域名，它指向的是127.0.0.1
+
 3.复制config.default.php，另存一份config.php，然后配好与config.default.php不同的内容，示例：
 ```
 <?php
