@@ -1,0 +1,51 @@
+{
+    "name": "demo/server",
+    "description": "Kuga Demo API Server",
+    "keywords": [
+        "PHP", "API Gateway"
+    ],
+    "homepage": "http://github.io/misnet/",
+    "type": "library",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Donny Wong",
+            "homepage": "http://www.tapy.org",
+            "email":"dony@tapy.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "kuga/openapi-core":"dev-master",
+        "kuga/qing": ">=0.8.7",
+        "kuga/acc-api": "dev-beta",
+        "kuga/demo-api": "dev-master"
+    },
+    "repositories": [
+        {
+            "packagist.org": false
+        },
+        {
+            "type": "composer",
+            "url":"https://mirrors.aliyun.com/composer/"
+        },
+        {
+            "type": "vcs",
+            "url": "https://hub.fastgit.org/misnet/kuga-openapi-core"
+        },
+        {
+            "type": "vcs",
+            "url": "https://hub.fastgit.org/misnet/qing"
+        },
+        {
+            "type": "vcs",
+            "url": "https://hub.fastgit.org/misnet/acc-api"
+        },
+        {
+            "type": "path",
+            "url": "../../demo-api"
+        }
+
+    ]
+}

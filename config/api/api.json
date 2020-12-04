@@ -1,0 +1,14 @@
+[
+
+    {
+        "name":"DEMO系统API",
+        "summary":"提供了DEMO系统级的相关API",
+        "children": [
+            {
+                "name": "购物车相关API",
+                "apiFiles": "cart/*.json",
+                "summary": "购物车相关API"
+            }
+        ]
+    }
+]

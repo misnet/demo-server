@@ -1,0 +1,31 @@
+{
+  "id":"demo.cart.product.add",
+  "name":"购物车添加商品",
+  "description":"添加商品",
+  "namespace":"Kuga\\Api\\Demo",
+  "method":"Cart.setQty",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"skuId",
+      "required":true,
+      "default":"",
+      "type":"Integer",
+      "description":"商品 SKU ID"
+    },
+    {
+      "param":"qty",
+      "required":false,
+      "default":"1",
+      "type":"Integer",
+      "description":"商品数量"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "description":"添加是否成功，成功返回true，失败返回false",
+      "sample": true
+    }
+  }
+}

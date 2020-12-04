@@ -1,0 +1,24 @@
+{
+  "id":"demo.cart.product.remove",
+  "name":"删除商品",
+  "description":"从购物车中移除商品",
+  "namespace":"Kuga\\Api\\Demo",
+  "method":"Cart.remove",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":"",
+      "type":"Integer",
+      "description":"购物车记录ID"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "description":"删除是否成功，成功返回true，失败返回false",
+      "sample": true
+    }
+  }
+}

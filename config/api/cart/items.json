@@ -1,0 +1,101 @@
+{
+  "id":"demo.cart.product.items",
+  "name":"购物商品列表",
+  "description":"购物车中商品列表",
+  "namespace":"Kuga\\Api\\Demo",
+  "method":"Cart.items",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"limit",
+      "required":false,
+      "default":"100",
+      "type":"Integer",
+      "description":"显示数量"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Object",
+      "description":"商品信息",
+      "responseItem":{
+        "id": {
+          "type": "Integer",
+          "description": "ID",
+          "sample": 1
+        },
+
+        "title": {
+          "type": "String",
+          "description": "商品名称",
+          "sample": "男圆领T恤"
+        },
+
+        "createTime": {
+          "type": "Integer",
+          "description": "创建时间，UNIX时间戳",
+          "sample": 1522222222
+        },
+
+        "productId": {
+          "type": "Integer",
+          "description": "商品ID",
+          "sample": "1"
+        },
+
+        "skuId": {
+          "type": "Integer",
+          "description": "SKU ID",
+          "sample": "1"
+        },
+
+        "qty": {
+          "type": "Integer",
+          "description": "数量",
+          "sample": "32"
+        },
+
+        "updateTime": {
+          "type": "Integer",
+          "description": "更新时间",
+          "sample": "1522222222"
+        },
+
+        "imgUrl": {
+          "type": "String",
+          "description": "商品图网址",
+          "sample": "http://www.test.com/example.jpg"
+        },
+        "skuJson": {
+          "type": "Array",
+          "description": "SKU对象",
+          "responseItem":{
+            "option": {
+              "type": "String",
+              "description": "销售属性",
+              "sample": "尺码"
+            },
+            "value": {
+              "type": "String",
+              "description": "销售属性",
+              "sample": "S码"
+            }
+          }
+        },
+
+        "price": {
+          "type": "float",
+          "description": "售价",
+          "sample": "99.9"
+        },
+
+        "originPrice": {
+          "type": "float",
+          "description": "原价",
+          "sample": "199.9"
+        }
+
+      }
+    }
+  }
+}

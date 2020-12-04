@@ -1,0 +1,37 @@
+{
+  "id":"demo.cart.test",
+  "name":"测试接口",
+  "description":"将传参再返回出来",
+  "namespace":"Kuga\\Api\\Demo",
+  "method":"Cart.test",
+  "accessLevel": 0,
+  "request":[
+    {
+      "param":"limit",
+      "required":false,
+      "default":"100",
+      "type":"Integer",
+      "description":"显示数量"
+    },
+    {
+      "param":"skuId",
+      "required":true,
+      "default":"",
+      "type":"Integer",
+      "description":"商品 SKU ID"
+    },
+    {
+      "param":"qty",
+      "required":false,
+      "default":"1",
+      "type":"Integer",
+      "description":"商品数量"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Object",
+      "description":"商品信息"
+    }
+  }
+}
